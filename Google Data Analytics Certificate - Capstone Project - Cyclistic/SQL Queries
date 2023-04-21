@@ -1,0 +1,249 @@
+--Create Table that all data will go in
+
+CREATE TABLE [all_data_Apr22_Mar23]
+(
+ride_id nvarchar(255),
+rideable_type nvarchar(50),
+started_at datetime2,
+ended_at datetime2,
+start_station_name nvarchar(50),
+start_station_id nvarchar(255),
+end_station_name nvarchar(50),
+end_station_id nvarchar(255),
+start_lat float,
+start_lng float,
+end_lat float,
+end_lng float,
+member_casual nvarchar(50)
+)
+
+--Rename Tables
+
+EXEC sp_rename '[Cyclistic].[dbo].[''202204-divvy-tripdata$'']', '202204';
+EXEC sp_rename '[Cyclistic].[dbo].[''202205-divvy-tripdata$'']', '202205';
+EXEC sp_rename '[Cyclistic].[dbo].[''202206-divvy-tripdata$'']', '202206';
+EXEC sp_rename '[Cyclistic].[dbo].[''202207-divvy-tripdata$'']', '202207';
+EXEC sp_rename '[Cyclistic].[dbo].[''202208-divvy-tripdata$'']', '202208';
+EXEC sp_rename '[Cyclistic].[dbo].[''202209-divvy-publictripdata$'']', '202209';
+EXEC sp_rename '[Cyclistic].[dbo].[''202210-divvy-tripdata$'']', '202210';
+EXEC sp_rename '[Cyclistic].[dbo].[''202211-divvy-tripdata$'']', '202211';
+EXEC sp_rename '[Cyclistic].[dbo].[''202212-divvy-tripdata$'']', '202212';
+EXEC sp_rename '[Cyclistic].[dbo].[''202301-divvy-tripdata$'']', '202301';
+EXEC sp_rename '[Cyclistic].[dbo].[''202302-divvy-tripdata$'']', '202302';
+EXEC sp_rename '[Cyclistic].[dbo].[''202303-divvy-tripdata$'']', '202303';
+
+--INSERT INTO [all_data_Apr22_Mar23] (ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202204]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202205]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202206]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202207]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202208]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202209]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202210]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202211]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202212]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202301]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202302]
+
+UNION ALL
+
+SELECT CAST(ride_id AS nvarchar(255)), CAST(rideable_type AS nvarchar(50)), CAST(started_at AS datetime2), CAST(ended_at AS datetime2), CAST(start_station_name AS nvarchar(50)), CAST(start_station_id AS nvarchar(255)), CAST(end_station_name AS nvarchar(50)), CAST(end_station_id AS nvarchar(255)), CAST(start_lat AS float), CAST(start_lng AS float), CAST(end_lat AS float), CAST(end_lng AS float), CAST(member_casual AS nvarchar(50))
+FROM [Cyclistic].[dbo].[202303]
+
+
+-- making sure it is just members and casual riders
+
+Select member_casual
+FROM Cyclistic..all_data_Apr22_Mar23
+Group by member_casual
+
+
+
+-- checking to see if there are any duplicates by ride id. No duplicates
+
+SELECT started_at, ride_id, COUNT(*)
+FROM all_data_Apr22_Mar23
+GROUP BY ride_id, started_at
+HAVING COUNT(*) > 1;
+
+
+
+--Adding columns to separate date and time
+
+ALTER TABLE all_data_Apr22_Mar23
+ADD 
+	start_date date,
+    start_time time,
+	end_date date,
+	end_time time
+
+-- updating those columns
+UPDATE all_data_Apr22_Mar23
+SET start_time = CAST(started_at AS TIME),
+    start_date = CAST(started_at AS DATE),
+	end_date = CAST(ended_at AS DATE),
+	end_time = CAST(ended_at AS TIME);
+
+
+
+--checking if there are any messed up dates
+select start_date, end_date
+from all_data_Apr22_Mar23
+group by start_date, end_date
+order by 1
+
+
+
+--create columns to calculate time of ride, by day and time
+
+
+ALTER TABLE all_data_Apr22_Mar23
+ADD ride_length_day int,
+	ride_length_min int
+
+UPDATE all_data_Apr22_Mar23
+SET ride_length_day = DATEDIFF(Day, started_at, ended_at),
+	ride_length_min = DATEDIFF(minute, started_at, ended_at)
+
+
+
+--making sure there are no weird times. there were none.
+
+SELECT *
+FROM all_data_Apr22_Mar23
+WHERE start_time < '00:00:00' OR end_time > '23:59:59';
+
+
+
+--checking to make sure no negative ride lengths. 82 columns found. deleted rows. none were null.
+
+SELECT *
+FROM all_data_Apr22_Mar23
+WHERE ride_length_day < 0 OR ride_length_min < 0 OR ride_length_day IS NULL OR ride_length_min IS NULL
+
+DELETE FROM all_data_Apr22_Mar23
+WHERE ride_length_day < 0 OR ride_length_min < 0;
+
+
+
+--Checking each column for nulls
+
+Select *
+from Cyclistic..all_data_Apr22_Mar23
+Where rideable_type IS NULL 
+
+
+---- 5855 rows of data does not have any information on where the bike ended. 
+Select *
+from Cyclistic..all_data_Apr22_Mar23
+WHERE end_lat IS NULL
+
+----Delete those 5855 rows.
+
+DELETE FROM Cyclistic..all_data_Apr22_Mar23
+WHERE end_lat IS NULL;
+
+
+--seeing if there are places outside lat range, as they should be close as it is a city
+
+SELECT MIN(start_lat) AS min_start_lat, MAX(start_lat) AS max_start_lat, -- 41.64, 42.07
+	   MIN(start_lng) AS min_start_lng, MAX(start_lng) AS max_start_lng, -- -87.84, -87.52
+	   MIN(end_lat) AS min_end_lat, MAX(end_lat) AS max_end_lat, -- 41.55, 42.37
+	   MIN(end_lng) AS min_end_lng, MAX(end_lng) AS max_end_lng -- -88.14, -87.3
+FROM Cyclistic..all_data_Apr22_Mar23;
+
+---- 8 columns where we have no end lat and lng, but we have the station name so we can update those values
+SELECT *
+FROM Cyclistic..all_data_Apr22_Mar23
+WHERE end_lng = 0
+
+SELECT *
+FROM Cyclistic..all_data_Apr22_Mar23
+WHERE end_station_name = 'Green St & Madison Ave*'
+
+----updating those end_lat values
+
+UPDATE Cyclistic..all_data_Apr22_Mar23
+SET end_lat = 41.8818273765713
+WHERE end_lat = 0 AND end_station_name = 'Green St & Madison Ave*';
+
+UPDATE Cyclistic..all_data_Apr22_Mar23
+SET end_lng = -87.6488319039344
+WHERE end_lng = 0 AND end_station_name = 'Green St & Madison Ave*';
+
+
+---- Add a new column to the table
+ALTER TABLE Cyclistic..all_data_Apr22_Mar23
+ADD day_of_week VARCHAR(20);
+
+---- Update the new column with day of the week values
+UPDATE Cyclistic..all_data_Apr22_Mar23
+SET day_of_week = DATENAME(dw, CONVERT(DATE, start_date, 1))
+
+SELECT *
+FROM Cyclistic..all_data_Apr22_Mar23;
+
+
+---- Adding month
+ALTER TABLE Cyclistic..all_data_Apr22_Mar23
+ADD month VARCHAR(20);
+
+UPDATE Cyclistic..all_data_Apr22_Mar23
+SET month = DATENAME(month, start_date);
+
+
+
+
+
+-- Filling null values, knowing the right values are in the table, based on the same lat
+
+UPDATE all_data_new
+SET end_station_name = (
+  SELECT TOP 1 end_station_name
+  FROM all_data_new
+  WHERE end_lat = all_data_new.end_lat
+    AND end_station_name IS NOT NULL
+  )
+WHERE end_station_name IS NULL
