@@ -4,4 +4,4 @@ In this project, I built a web scraper following instructions from @Action_Backe
 
 I also collected individual player data from https://www.naturalstattrick.com/ for the same season.
 
-This data was then cleaned in both Excel and Microsoft PowerBI as needed and used to create a visualization on NHL 5v5 Offense.
+This data was then cleaned in both Excel and Microsoft PowerBI as needed and used to create a visualization on NHL 5v5 Offense, analyzing both teams and players.
