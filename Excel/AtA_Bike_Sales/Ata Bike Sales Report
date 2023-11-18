@@ -2,15 +2,15 @@
 Company goal: Increase sales. My business task: Explore and analyze the data, find opportunities for sales growth, and provide actionable recommendations to the company. 
 
 
-Prepare: The data used was a single Excel file. There were some null values, duplicates, and improper formatting. There was enough relevant information to complete an analysis.
+**Prepare**: The data used was a single Excel file. There were some null values, duplicates, and improper formatting. There was enough relevant information to complete an analysis.
 
-Process/Clean: I went through each column to clean the data. First, I removed all duplicates in the data by using Excel's "Remove Duplicates" feature in the "Data" tab. Each transaction has a unique ID, allowing the safe removal of duplicates. Second, I unabbreviated the marital status and gender to ensure there was no confusion in the abbreviation of "M". This was done using the Find and Replace feature in Excel. Third, I made sure the income column was the proper unit of currency. Fourth, I simplified the age data by creating 3 age brackets, by using the =IF() statement. 
+**Process/Clean**: I went through each column to clean the data. First, I removed all duplicates in the data by using Excel's "Remove Duplicates" feature in the "Data" tab. Each transaction has a unique ID, allowing the safe removal of duplicates. Second, I unabbreviated the marital status and gender to ensure there was no confusion in the abbreviation of "M". This was done using the Find and Replace feature in Excel. Third, I made sure the income column was the proper unit of currency. Fourth, I simplified the age data by creating 3 age brackets, by using the =IF() statement. 
 
-Analyze: To analyze, I created pivot tables to explore the relationship between the data and charts to visualize the relationships. I focused on the relation between age, gender, income, and commute distance to bike sales. These pivot tables and charts are shown in the "Pivot Table" tab of the Excel sheet. 
+**Analyze**: To analyze, I created pivot tables to explore the relationship between the data and charts to visualize the relationships. I focused on the relation between age, gender, income, and commute distance to bike sales. These pivot tables and charts are shown in the "Pivot Table" tab of the Excel sheet. 
 
 
 
-Share: I created a dashboard to easily visualize the relationship between all of the data. From this, we can find patterns in the data, allowing us to create an actionable business plan to improve our business. 
+**Share**: I created a dashboard to easily visualize the relationship between all of the data. From this, we can find patterns in the data, allowing us to create an actionable business plan to improve our business. 
 
 Income & Sales: 
 
@@ -18,7 +18,6 @@ Analysis: We can see that the higher the income, the more sales there are. One r
 
 Actionable Recommendations: target high-earning communities, bundle the bike with other high-value needs for low-income customers, provide financing options for low-income customers
 
-Limit and how
 
 
 Age & Sales: 
@@ -26,6 +25,7 @@ Age & Sales:
 Analysis: We see a spike in sales in the middle age range bracket for both male and female customers. This could mean that our customers are mostly using bikes for commutes to and from work.
 
 Actionable Recommendations: Add bike features or customizations that help the average commuter, market the bike to the commuter, emphasizing the benefits of commuting to work, partner with local businesses that have a lot of middle-aged customers
+
 
 
 Customer Commute & Sales:
@@ -36,7 +36,7 @@ Actionable Recommendations: focus on densely populated areas, such as inner citi
 
 
 
-Important limits of the data - having the following data would help us narrow down on our top customers and to whom we are providing the most value. The more value we give, the better our business performs: 
+**Important limits of the data** - having the following data would help us narrow down on our top customers and to whom we are providing the most value. The more value we give, the better our business performs: 
 No time data - can't see daily, weekly, or annual buying or usage trends
 No customer feedback data - could be used to improve insights as it gives reasons why people do what they do and what they value
 No population data - does not indicate if our customer share % is the same as the population around us
