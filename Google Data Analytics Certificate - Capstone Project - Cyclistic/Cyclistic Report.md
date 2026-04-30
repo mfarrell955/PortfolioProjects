@@ -1,4 +1,4 @@
-**Ask**:
+**Ask**: 
 
   Company goal: Convert casual riders to member riders.
   My business task: Analyze how annual members and casual riders use Cyclistic bikes differently and make recommendations on how to convert casual riders to annual members.
